@@ -1,24 +1,20 @@
 import React from "react";
-import ScrollToTop from "./Components/ScrollToTop";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar";
-import Service from "./Components/Service";
-import Testimonials from "./Components/Testimonials";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import Recommendation from "./Components/Recommendation";
-import Classes from "./Styles/Footer.module.css";
+import MainPage from "./Components/MainPage"; // Single page for all main components
+import Login from "./Components/Login"; // Separate login page
 
 function App() {
   return (
-    <div className={Classes.app}>
-      <ScrollToTop />
+    <Router>
       <NavBar />
-      <Hero />
-      <Service />
-      <Recommendation />
-      <Testimonials />
-      <Footer />
-    </div>
+      <Routes>
+        {/* Main page route */}
+        <Route path="/" element={<MainPage />} />
+        {/* Login page route */}
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 

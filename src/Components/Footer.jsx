@@ -14,13 +14,13 @@ function Footer() {
         <div className={Classes.socialLink}>
           <p>+8801305282768</p>
           <p>manzilyatra@gmail.com</p>
-          <a href="https://web.facebook.com/rahi680/">
+          <a href="https://web.facebook.com/">
             <img src={facebook} alt="" />
           </a>
-          <a href="https://www.linkedin.com/in/asfak-ahmed-731212245/">
+          <a href="https://www.linkedin.com/">
             <img src={linkedin} alt="" />
           </a>
-          <a href="https://github.com/asfak00">
+          <a href="https://github.com/">
             <img src={github} alt="" />
           </a>
         </div>
